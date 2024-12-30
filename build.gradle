@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = "net.chauhandevs.utils.commandedzipper"
+version = "1.0"
+
+application {
+    mainClass = "net.chauhandevs.utils.commandedzipper.CommandedZipper"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "net.lingala.zip4j:zip4j:2.11.5"
+}
+
+jar {
+    manifest {
+        attributes(
+            "Main-Class" : "net.chauhandevs.utils.commandedzipper.CommandedZipper"
+        )
+    }
+}

@@ -1,0 +1,13 @@
+# IDE and code editors
+.vscode
+.idea
+.eclipse
+
+# Build directories
+.gradle
+build
+
+# Packages
+*.jar
+*.zip
+*.rar
