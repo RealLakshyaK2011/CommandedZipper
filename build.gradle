@@ -26,3 +26,5 @@ jar {
         )
     }
 }
+
+tasks.build.finalizedBy("shadowJar")
